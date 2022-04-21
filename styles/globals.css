@@ -1,9 +1,55 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+:root {
+  --clr-primary: rgb(138, 80, 255);
+  --clr-bg-light: rgb(228, 233, 241);
+  --clr-bg-dark: rgb(25, 25, 32);
+  --clr-bg2-light: rgb(208, 216, 229);
+  --clr-bg2-dark: rgb(17, 17, 21);
+  --clr-subtext-light: rgb(40, 42, 44); 
+  --clr-subtext-dark: rgb(185, 191, 198);
+}
+
+*::-webkit-scrollbar {
+  width: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--clr-bg2-light);
+}
+.dark *::-webkit-scrollbar-track {
+  background: var(--clr-bg2-dark);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--clr-subtext-light);
+  border: 6px solid var(--clr-bg2-light);
+}
+.dark *::-webkit-scrollbar-thumb {
+  background: var(--clr-subtext-dark);
+  border: 6px solid var(--clr-bg2-dark);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-primary);
+}
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Plus Jakarta Sans;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  background-color: var(--clr-bg-light);
+  color: black;
+  scrollbar-color: var(--clr-subtext-light) var(--clr-bg2-light);
+}
+html.dark {
+  background-color: var(--clr-bg-dark);
+  color: white;
+  scrollbar-color: var(--clr-subtext-dark) var(--clr-bg2-dark);
 }
 
 a {
@@ -13,4 +59,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+*::selection {
+  background-color: var(--clr-primary);
+  color: white;
+}
+
+h1, h2, h3, p {
+  margin: 0;
 }

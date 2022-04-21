@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  background-color: var(--clr-bg-light);
+  padding: .5rem;
+}
+.header.dark {
+  background-color: var(--clr-bg-dark)
+}
+
+.darkmodeSwitchDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .3rem;
+}
+
+.icon {
+  width: 2rem;
+}

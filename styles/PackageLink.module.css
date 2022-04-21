@@ -1,0 +1,79 @@
+.package {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  gap: .5rem;
+  font-size: .9rem;
+  cursor: pointer;
+  color: black;
+  white-space: nowrap;
+}
+.package.dark {
+  color: white;
+}
+.package:hover {
+  color: var(--clr-primary);
+}
+
+.packageLogo {
+  width: 2.3rem;
+  display: flex;
+  user-select: none;
+}
+
+/* Specific Logos */
+
+.cra {
+  filter: brightness(80%);
+}
+.cra.dark {
+  filter: brightness(100%);
+}
+
+.next.dark {
+  filter: invert(100%);
+}
+
+.js {
+  border-radius: .2rem;
+  overflow: hidden;
+}
+
+.antDesign.dark {
+  filter: invert(100%);
+}
+
+/* Media Queries */
+
+@media (min-width: 420px)  {
+  .package {
+    font-size: 1rem;
+  }
+
+  .packageLogo {
+    width: 2.5rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .package {
+    font-size: .9rem;
+  }
+
+  .packageLogo {
+    width: 2.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .package {
+    font-size: 1rem;
+  }
+
+  .packageLogo {
+    width: 2.5rem;
+  }
+}

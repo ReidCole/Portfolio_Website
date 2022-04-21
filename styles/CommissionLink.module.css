@@ -1,0 +1,33 @@
+.anchor {
+  color: black;
+  border: none;
+  padding: 0 1rem;
+}
+.anchor.dark {
+  color: white;
+  border-color: white;
+}
+.anchor:last-child {
+  border: none;
+}
+
+.projectName {
+  font-size: 1.2rem;
+}
+.anchor:hover .projectName {
+  color: var(--clr-primary);
+}
+
+.commissionerName {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Media Queries */
+
+@media (min-width: 750px) {
+  .anchor {
+    border-right: .15rem solid black;
+    white-space: nowrap;
+  }
+}

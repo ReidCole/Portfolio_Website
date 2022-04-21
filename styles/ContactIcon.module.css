@@ -1,0 +1,39 @@
+.anchor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  padding: .1rem;
+}
+.anchor:hover > .icon {
+  color: var(--clr-primary);
+  transform: scale(110%);
+}
+.anchor:hover > .iconName {
+  color: inherit;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: .5rem;
+  padding: .1rem;
+  transform: scale(100%);
+  transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: black;
+}
+.icon.dark {
+  color: white;
+}
+
+.iconName {
+  margin: 0;
+  padding: .3rem 0;
+  color: transparent;
+  position: absolute;
+  bottom: -1.6rem;
+  transition: all .1s;
+  user-select: none;
+}
