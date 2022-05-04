@@ -1,6 +1,6 @@
 import amazonSiteImg from "../public/screenshots/amazon_screenshot.png";
 import evernoteSiteImg from "../public/screenshots/evernote_screenshot.png";
-import messengerSiteImg from "../public/screenshots/messenger_screenshot.png";
+import reidsDrinksSiteImg from "../public/screenshots/reidsdrinks_screenshot.png";
 
 import craLogo from "../public/logos/cra_logo.svg";
 import tailwindLogo from "../public/logos/tailwindcss_logo.svg";
@@ -9,7 +9,6 @@ import nextLogo from "../public/logos/nextjs_logo.svg";
 import jsLogo from "../public/logos/js_logo.svg";
 import cssLogo from "../public/logos/css_logo.svg";
 
-import Image from "next/image";
 import ShowcaseItem from "./ShowcaseItem";
 import PackageLink from "./PackageLink";
 import showcaseStyles from "../styles/ShowcaseSection.module.css";
@@ -21,14 +20,14 @@ const ShowcaseSection: React.FC = () => {
 
   return (
     <section className={theme(showcaseStyles.section, showcaseStyles.dark)}>
-      <h1 className={showcaseStyles.sectionHeading}>Showcase</h1>
+      <h1 className={showcaseStyles.sectionHeading}>My Samples</h1>
 
       <div className={showcaseStyles.showcaseItemList}>
         <ShowcaseItem
-          websiteName="Facebook Messenger"
-          websiteUrl="https://www.facebook.com/messages"
-          siteImgAltText="facebook messenger website"
-          siteImgSrc={messengerSiteImg}
+          websiteName="Online Shop"
+          websiteUrl="https://coruscating-moxie-ffd222.netlify.app/"
+          siteImgAltText="online shop website"
+          siteImgSrc={reidsDrinksSiteImg}
           packages={[
             <PackageLink
               key="0"
@@ -58,7 +57,7 @@ const ShowcaseSection: React.FC = () => {
         />
 
         <ShowcaseItem
-          websiteName="Amazon"
+          websiteName="Amazon (temp)"
           websiteUrl="https://www.amazon.com"
           siteImgAltText="amazon website"
           siteImgSrc={amazonSiteImg}
@@ -91,7 +90,7 @@ const ShowcaseSection: React.FC = () => {
         />
 
         <ShowcaseItem
-          websiteName="Evernote"
+          websiteName="Evernote (temp)"
           websiteUrl="https://www.evernote.com"
           siteImgAltText="evernote website"
           siteImgSrc={evernoteSiteImg}
