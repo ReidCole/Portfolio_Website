@@ -11,7 +11,9 @@ const LandingSection: React.FC = () => {
     <section className={theme(styles.section, styles.dark)}>
       <div className={styles.textDiv}>
         <p className={styles.nameText}>Reid Cole</p>
+
         <h1 className={styles.mainText}>Web Developer</h1>
+
         <p className={styles.subText}>I make front-end web applications using React JS.</p>
       </div>
     </section>

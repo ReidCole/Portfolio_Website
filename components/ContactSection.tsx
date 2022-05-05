@@ -22,13 +22,11 @@ const ContactSection: React.FC = () => {
           className={styles.iconMail}
         />
         <ContactIcon
-          href="https://www.linkedin.com/in/reid-cole-9a253a238/"
+          href="https://www.linkedin.com/in/reid-cole/"
           Icon={AiOutlineLinkedin}
           name="LinkedIn"
         />
-        <ContactIcon href="https://www.facebook.com/" Icon={AiOutlineFacebook} name="Facebook" />
-        <ContactIcon href="https://www.instagram.com/" Icon={AiOutlineInstagram} name="Instagram" />
-        <ContactIcon href="https://www.github.com/" Icon={AiOutlineGithub} name="GitHub" />
+        <ContactIcon href="https://github.com/ReidCole" Icon={AiOutlineGithub} name="GitHub" />
       </div>
     </section>
   );

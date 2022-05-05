@@ -10,8 +10,18 @@
 
 .sectionHeading {
   font-size: 1.6rem;
-  margin-bottom: 2rem;
   font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.sectionSubtext {
+  margin-bottom: 2rem;
+  color: var(--clr-subtext-light);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.sectionSubtext.dark {
+  color: var(--clr-subtext-dark);
 }
 
 .showcaseItemList {
@@ -30,7 +40,6 @@
 
 .showcaseItemAnchor:hover > .showcaseItemImgContainer {
   transform: scale(105%);
-  
 }
 .showcaseItemAnchor:hover > .showcaseItemHeading {
   color: var(--clr-primary);
@@ -38,7 +47,7 @@
 
 .showcaseItemHeading {
   font-size: 1.2rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   font-weight: 500;
 }
 
@@ -50,7 +59,7 @@
 }
 
 .showcaseItemImgContainer {
-  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .showcaseItemImg {
@@ -61,12 +70,11 @@
   filter: brightness(100%);
 }
 
-
 .subText {
   font-style: italic;
   color: var(--clr-subtext-light);
-  margin: .5rem 0;
-  font-size: .85rem;
+  margin: 0.5rem 0;
+  font-size: 0.85rem;
 }
 .subText.dark {
   color: var(--clr-subtext-dark);
@@ -80,7 +88,7 @@
 
 /* Media Queries */
 
-@media (min-width: 420px)  {
+@media (min-width: 420px) {
   .showcaseItemHeading {
     font-size: 1.3rem;
   }
@@ -106,7 +114,7 @@
 
 @media (min-width: 1300px) {
   .section {
-    border-left: .15rem solid;
-    border-right: .15rem solid;
+    border-left: 0.15rem solid;
+    border-right: 0.15rem solid;
   }
 }

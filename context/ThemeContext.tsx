@@ -15,15 +15,6 @@ export const ThemeProvider: React.FC<Props> = ({ children }) => {
   const [darkMode, setDarkMode] = useState<boolean>(true);
 
   useEffect(() => {
-    if (typeof localStorage !== "undefined") {
-      const initial: string | null = localStorage.getItem("darkmode");
-      const intialAsBool: boolean = initial === "true" ? true : false;
-      console.log("initial:", initial);
-      setDarkMode(intialAsBool);
-    }
-  }, []);
-
-  useEffect(() => {
     const html = document.getElementsByTagName("html")[0];
     const scrollbarTracks = document.querySelectorAll("*::-webkit-scrollbar-track");
     const scrollbarThumbs = document.querySelectorAll("*::-webkit-scrollbar-thumb");
@@ -38,16 +29,12 @@ export const ThemeProvider: React.FC<Props> = ({ children }) => {
     }
   }, [darkMode]);
 
-  function setDarkModeAndLocalStorage(value: boolean) {
+  function setDarkModeValue(value: boolean) {
     setDarkMode(value);
-    if (typeof localStorage !== "undefined") {
-      localStorage.setItem("darkmode", value ? "true" : "false");
-      console.log("set local storage darkmode to", value);
-    }
   }
 
   const value: Value = {
-    setDarkMode: setDarkModeAndLocalStorage,
+    setDarkMode: setDarkModeValue,
     darkMode: darkMode,
   };
 

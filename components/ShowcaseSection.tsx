@@ -20,11 +20,12 @@ const ShowcaseSection: React.FC = () => {
 
   return (
     <section className={theme(showcaseStyles.section, showcaseStyles.dark)}>
-      <h1 className={showcaseStyles.sectionHeading}>My Samples</h1>
+      <h1 className={showcaseStyles.sectionHeading}>Showcase</h1>
+      <p className={theme(showcaseStyles.sectionSubtext, showcaseStyles.dark)}>More to come...</p>
 
       <div className={showcaseStyles.showcaseItemList}>
         <ShowcaseItem
-          websiteName="Online Shop"
+          websiteName="Online Shop - Reid's Drinks"
           websiteUrl="https://coruscating-moxie-ffd222.netlify.app/"
           siteImgAltText="online shop website"
           siteImgSrc={reidsDrinksSiteImg}
@@ -56,7 +57,7 @@ const ShowcaseSection: React.FC = () => {
           ]}
         />
 
-        <ShowcaseItem
+        {/* <ShowcaseItem
           websiteName="Amazon (temp)"
           websiteUrl="https://www.amazon.com"
           siteImgAltText="amazon website"
@@ -120,7 +121,7 @@ const ShowcaseSection: React.FC = () => {
               href="https://www.w3.org/Style/CSS/Overview.en.html"
             />,
           ]}
-        />
+        /> */}
       </div>
     </section>
   );
