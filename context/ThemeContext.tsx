@@ -19,13 +19,13 @@ export const ThemeProvider: React.FC<Props> = ({ children }) => {
     const scrollbarTracks = document.querySelectorAll("*::-webkit-scrollbar-track");
     const scrollbarThumbs = document.querySelectorAll("*::-webkit-scrollbar-thumb");
     if (darkMode) {
-      html.className = "dark";
-      scrollbarTracks.forEach((el) => (el.className = "dark"));
-      scrollbarThumbs.forEach((el) => (el.className = "dark"));
-    } else {
       html.className = "";
       scrollbarTracks.forEach((el) => (el.className = ""));
       scrollbarThumbs.forEach((el) => (el.className = ""));
+    } else {
+      html.className = "light";
+      scrollbarTracks.forEach((el) => (el.className = "light"));
+      scrollbarThumbs.forEach((el) => (el.className = "light"));
     }
   }, [darkMode]);
 

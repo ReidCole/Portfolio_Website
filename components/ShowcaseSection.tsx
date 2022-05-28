@@ -1,13 +1,15 @@
-import amazonSiteImg from "../public/screenshots/amazon_screenshot.png";
-import evernoteSiteImg from "../public/screenshots/evernote_screenshot.png";
 import reidsDrinksSiteImg from "../public/screenshots/reidsdrinks_screenshot.png";
+import movieListMakerSiteImg from "../public/screenshots/movielistmaker_screenshot.png";
 
-import craLogo from "../public/logos/cra_logo.svg";
+// import craLogo from "../public/logos/cra_logo.svg";
 import tailwindLogo from "../public/logos/tailwindcss_logo.svg";
 import tsLogo from "../public/logos/ts_logo.svg";
 import nextLogo from "../public/logos/nextjs_logo.svg";
-import jsLogo from "../public/logos/js_logo.svg";
-import cssLogo from "../public/logos/css_logo.svg";
+// import jsLogo from "../public/logos/js_logo.svg";
+// import cssLogo from "../public/logos/css_logo.svg";
+import expressLogo from "../public/logos/express_logo.png";
+import mongoLogo from "../public/logos/mongodb_logo.svg";
+import jwtLogo from "../public/logos/jwt_logo.svg";
 
 import ShowcaseItem from "./ShowcaseItem";
 import PackageLink from "./PackageLink";
@@ -25,9 +27,9 @@ const ShowcaseSection: React.FC = () => {
 
       <div className={showcaseStyles.showcaseItemList}>
         <ShowcaseItem
-          websiteName="Online Shop - Reid's Drinks"
+          websiteName="Reid's Drinks - Online Shop"
           websiteUrl="https://coruscating-moxie-ffd222.netlify.app/"
-          siteImgAltText="online shop website"
+          siteImgAltText="reid's drinks online shop website"
           siteImgSrc={reidsDrinksSiteImg}
           packages={[
             <PackageLink
@@ -53,6 +55,39 @@ const ShowcaseSection: React.FC = () => {
               logoClassName={packageStyles.tailwind}
               logoAltText="tailwind CSS logo"
               href="https://tailwindcss.com/"
+            />,
+          ]}
+        />
+
+        <ShowcaseItem
+          websiteName="Movie List Maker"
+          websiteUrl="https://client.movielistmakerserver.xyz/"
+          siteImgAltText="movie list maker website"
+          siteImgSrc={movieListMakerSiteImg}
+          packages={[
+            <PackageLink
+              key="0"
+              packageName="Express"
+              logoSrc={expressLogo}
+              logoClassName={packageStyles.express}
+              logoAltText="express JS logo"
+              href="https://expressjs.com/"
+            />,
+            <PackageLink
+              key="1"
+              packageName="MongoDB"
+              logoSrc={mongoLogo}
+              logoClassName={packageStyles.mongoDB}
+              logoAltText="mongo DB logo"
+              href="https://www.mongodb.com/"
+            />,
+            <PackageLink
+              key="2"
+              packageName="JSON Web Token"
+              logoSrc={jwtLogo}
+              logoClassName={packageStyles.jwt}
+              logoAltText="JSON web token logo"
+              href="https://jwt.io/"
             />,
           ]}
         />

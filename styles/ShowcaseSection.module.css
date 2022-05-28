@@ -39,7 +39,7 @@
 }
 
 .showcaseItemAnchor:hover > .showcaseItemImgContainer {
-  transform: scale(105%);
+  transform: scale(103%);
 }
 .showcaseItemAnchor:hover > .showcaseItemHeading {
   color: var(--clr-primary);

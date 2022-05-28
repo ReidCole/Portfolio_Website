@@ -5,8 +5,8 @@
   align-items: center;
   position: relative;
   padding: 0;
-  gap: .5rem;
-  font-size: .9rem;
+  gap: 0.5rem;
+  font-size: 0.9rem;
   cursor: pointer;
   color: black;
   white-space: nowrap;
@@ -38,7 +38,7 @@
 }
 
 .js {
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   overflow: hidden;
 }
 
@@ -46,9 +46,23 @@
   filter: invert(100%);
 }
 
+.mongoDB {
+  filter: invert(100%);
+}
+.mongoDB.dark {
+  filter: invert(0%);
+}
+
+.jwt {
+  filter: brightness(85%);
+}
+.jwt.dark {
+  filter: brightness(100%);
+}
+
 /* Media Queries */
 
-@media (min-width: 420px)  {
+@media (min-width: 420px) {
   .package {
     font-size: 1rem;
   }
@@ -60,7 +74,7 @@
 
 @media (min-width: 750px) {
   .package {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .packageLogo {
