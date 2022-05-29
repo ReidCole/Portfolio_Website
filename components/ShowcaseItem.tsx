@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ReactNode } from "react";
 import { useTheme } from "../context/ThemeContext";
 import styles from "../styles/ShowcaseSection.module.css";
+import unloadedImg from "../public/unloaded-image.png";
 
 type Props = {
   websiteName: string;
@@ -37,6 +38,7 @@ const ShowcaseItem: React.FC<Props> = ({
             height={1080}
             alt={siteImgAltText}
             style={{ overflow: "visible" }}
+            blurDataURL={unloadedImg.src}
           />
         </div>
       </a>

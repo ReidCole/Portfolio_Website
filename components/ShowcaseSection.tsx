@@ -1,5 +1,5 @@
-import reidsDrinksSiteImg from "../public/screenshots/reidsdrinks_screenshot.png";
-import movieListMakerSiteImg from "../public/screenshots/movielistmaker_screenshot.png";
+import reidsDrinksSiteImg from "../public/screenshots/reidsdrinks_screenshot.jpg";
+import movieListMakerSiteImg from "../public/screenshots/movielistmaker_screenshot.jpg";
 
 // import craLogo from "../public/logos/cra_logo.svg";
 import tailwindLogo from "../public/logos/tailwindcss_logo.svg";
@@ -28,7 +28,7 @@ const ShowcaseSection: React.FC = () => {
       <div className={showcaseStyles.showcaseItemList}>
         <ShowcaseItem
           websiteName="Reid's Drinks - Online Shop"
-          websiteUrl="https://coruscating-moxie-ffd222.netlify.app/"
+          websiteUrl="https://reidsdrinks.netlify.app/"
           siteImgAltText="reid's drinks online shop website"
           siteImgSrc={reidsDrinksSiteImg}
           packages={[
