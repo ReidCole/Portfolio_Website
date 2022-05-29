@@ -38,6 +38,7 @@ const ShowcaseItem: React.FC<Props> = ({
             height={1080}
             alt={siteImgAltText}
             style={{ overflow: "visible" }}
+            placeholder="blur"
             blurDataURL={unloadedImg.src}
           />
         </div>
