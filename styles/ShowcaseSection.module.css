@@ -59,11 +59,13 @@
 }
 
 .showcaseItemImgContainer {
-  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
 }
 
 .showcaseItemImg {
-  border-radius: 1rem;
   filter: brightness(93%);
 }
 .showcaseItemImg.dark {
