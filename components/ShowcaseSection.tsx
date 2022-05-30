@@ -67,7 +67,7 @@ const ShowcaseSection: React.FC = () => {
           packages={[
             <PackageLink
               key="0"
-              packageName="Express"
+              packageName="Express JS"
               logoSrc={expressLogo}
               logoClassName={packageStyles.express}
               logoAltText="express JS logo"

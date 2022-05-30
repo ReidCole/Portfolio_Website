@@ -5,9 +5,12 @@
   justify-content: center;
   background-color: var(--clr-bg2-light);
   padding: 3rem;
+  border-bottom: 1px solid;
+  border-color: var(--clr-subtext-dark);
 }
 .section.dark {
   background-color: var(--clr-bg2-dark);
+  border-color: var(--clr-subtext-light);
 }
 
 .nameText {
@@ -98,16 +101,5 @@
 
   .subText {
     font-size: 1.3rem;
-  }
-}
-
-/* Animations */
-
-@keyframes fade-in {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
   }
 }

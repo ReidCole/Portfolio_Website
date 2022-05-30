@@ -6,10 +6,13 @@
   align-items: center;
   text-align: center;
   color: var(--clr-subtext-light);
+  border-bottom: 1px solid;
+  border-color: var(--clr-subtext-dark);
 }
 .footer.dark {
   background-color: var(--clr-bg2-dark);
   color: var(--clr-subtext-dark);
+  border-color: var(--clr-subtext-light);
 }
 
 .text {
@@ -26,7 +29,7 @@
 .copyrightDiv {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 /* Media Queries */

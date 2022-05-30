@@ -4,7 +4,7 @@
   align-items: center;
   padding: 2rem 1.8rem 4rem 1.8rem;
   max-width: 1200px;
-  margin: 1rem auto 0 auto;
+  margin: 0 auto;
   border: none;
 }
 
@@ -38,17 +38,18 @@
   align-items: flex-start;
 }
 
+.showcaseItemHeading {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  font-weight: 500;
+  transition: color 0.05s linear;
+}
+
 .showcaseItemAnchor:hover > .showcaseItemImgContainer {
   transform: scale(103%);
 }
 .showcaseItemAnchor:hover > .showcaseItemHeading {
   color: var(--clr-primary);
-}
-
-.showcaseItemHeading {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-  font-weight: 500;
 }
 
 .link {
@@ -114,9 +115,9 @@
   }
 }
 
-@media (min-width: 1300px) {
+/* @media (min-width: 1300px) {
   .section {
     border-left: 0.15rem solid;
     border-right: 0.15rem solid;
   }
-}
+} */

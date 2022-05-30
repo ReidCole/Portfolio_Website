@@ -64,8 +64,6 @@ const Footer: React.FC = () => {
         <p className={footerStyles.text}>&copy; Reid Cole 2022</p>
         <p className={footerStyles.text}>
           Any 3rd-party services or products referenced on this website are not owned by me.
-          <br />
-          All services listed provide a link to the original source.
         </p>
       </div>
     </footer>

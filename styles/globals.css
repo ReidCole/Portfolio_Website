@@ -11,32 +11,38 @@
 }
 
 *::-webkit-scrollbar {
-  width: 20px;
+  width: 16px;
 }
 
 *::-webkit-scrollbar-track {
   background: var(--clr-bg2-dark);
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: var(--clr-subtext-light);
 }
 .light *::-webkit-scrollbar-track {
   background: var(--clr-bg2-light);
+  border-color: var(--clr-subtext-dark);
 }
 
 *::-webkit-scrollbar-thumb {
-  background: var(--clr-subtext-dark);
-  border: 6px solid var(--clr-bg2-dark);
+  background-color: var(--clr-bg-dark);
+  border: 1px solid var(--clr-subtext-light);
+  /* border-radius: 1rem; */
 }
 .light *::-webkit-scrollbar-thumb {
-  background: var(--clr-subtext-light);
-  border: 6px solid var(--clr-bg2-light);
+  background-color: var(--clr-bg2-light);
+  border: 1px solid var(--clr-subtext-dark);
 }
 *::-webkit-scrollbar-thumb:hover {
   background: var(--clr-primary);
+  border: none;
 }
 
 body {
   padding: 0;
   margin: 0;
-  font-family: Plus Jakarta Sans;
+  font-family: Plus Jakarta Sans, sans-serif;
 }
 
 html {

@@ -6,12 +6,15 @@ import {
   AiOutlineInstagram,
   AiOutlineGithub,
 } from "react-icons/ai";
+import { useTheme } from "../context/ThemeContext";
 import styles from "../styles/ContactSection.module.css";
 import ContactIcon from "./ContactIcon";
 
 const ContactSection: React.FC = () => {
+  const theme = useTheme();
+
   return (
-    <section className={styles.section}>
+    <section className={theme(styles.section, styles.dark)}>
       <h1 className={styles.sectionHeading}>Contact Me</h1>
 
       <div className={styles.contactIconList}>
