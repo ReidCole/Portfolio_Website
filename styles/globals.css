@@ -28,10 +28,9 @@
 *::-webkit-scrollbar-thumb {
   background-color: var(--clr-bg-dark);
   border: 1px solid var(--clr-subtext-light);
-  /* border-radius: 1rem; */
 }
 .light *::-webkit-scrollbar-thumb {
-  background-color: var(--clr-bg2-light);
+  background-color: var(--clr-bg-light);
   border: 1px solid var(--clr-subtext-dark);
 }
 *::-webkit-scrollbar-thumb:hover {
