@@ -34,8 +34,6 @@ const ShowcaseItem: React.FC<Props> = ({
           <Image
             className={theme(styles.showcaseItemImg, styles.dark)}
             src={siteImgSrc}
-            width={1920}
-            height={1080}
             alt={siteImgAltText}
             style={{ overflow: "visible" }}
             placeholder="blur"
