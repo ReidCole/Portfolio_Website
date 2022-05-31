@@ -40,7 +40,7 @@ const StorySection: React.FC = () => {
         <h2 className={styles.heading}>Experience</h2>
         <p className={styles.mb}>
           I am a fully self-taught web developer, mainly focusing on React JS and the front-end
-          development of websites, although I also have a little experience with back-end server
+          development of websites, although I also have some experience with back-end server
           development. I have been teaching myself for {timeTaught} (updates on page load).
         </p>
         <p>Main technologies I use</p>
