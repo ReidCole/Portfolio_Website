@@ -1,15 +1,17 @@
 import reidsDrinksSiteImg from "../public/screenshots/reidsdrinks_screenshot.jpg";
 import movieListMakerSiteImg from "../public/screenshots/movielistmaker_screenshot.jpg";
+import simpleNotesSiteImg from "../public/screenshots/simplenotes_screenshot.jpg";
 
 // import craLogo from "../public/logos/cra_logo.svg";
 import tailwindLogo from "../public/logos/tailwindcss_logo.svg";
 import tsLogo from "../public/logos/ts_logo.svg";
 import nextLogo from "../public/logos/nextjs_logo.svg";
 // import jsLogo from "../public/logos/js_logo.svg";
-// import cssLogo from "../public/logos/css_logo.svg";
+import cssLogo from "../public/logos/css_logo.svg";
 import expressLogo from "../public/logos/express_logo.png";
 import mongoLogo from "../public/logos/mongodb_logo.svg";
-import jwtLogo from "../public/logos/jwt_logo.svg";
+// import jwtLogo from "../public/logos/jwt_logo.svg";
+import reduxLogo from "../public/logos/redux_logo.svg";
 
 import ShowcaseItem from "./ShowcaseItem";
 import PackageLink from "./PackageLink";
@@ -27,7 +29,7 @@ const ShowcaseSection: React.FC = () => {
 
       <div className={showcaseStyles.showcaseItemList}>
         <ShowcaseItem
-          websiteName="Reid's Drinks - Online Shop"
+          websiteName="Reid's Drinks"
           websiteUrl="https://reidsdrinks.netlify.app/"
           siteImgAltText="reid's drinks online shop website"
           siteImgSrc={reidsDrinksSiteImg}
@@ -83,53 +85,20 @@ const ShowcaseSection: React.FC = () => {
             />,
             <PackageLink
               key="2"
-              packageName="JSON Web Token"
-              logoSrc={jwtLogo}
-              logoClassName={packageStyles.jwt}
-              logoAltText="JSON web token logo"
-              href="https://jwt.io/"
-            />,
-          ]}
-        />
-
-        {/* <ShowcaseItem
-          websiteName="Amazon (temp)"
-          websiteUrl="https://www.amazon.com"
-          siteImgAltText="amazon website"
-          siteImgSrc={amazonSiteImg}
-          packages={[
-            <PackageLink
-              key="0"
-              packageName="Create React App"
-              logoSrc={craLogo}
-              logoClassName={packageStyles.cra}
-              logoAltText="create react app logo"
-              href="https://create-react-app.dev/"
-            />,
-            <PackageLink
-              key="1"
-              packageName="TypeScript"
-              logoSrc={tsLogo}
-              logoClassName={packageStyles.ts}
-              logoAltText="typescript logo"
-              href="https://www.typescriptlang.org/"
-            />,
-            <PackageLink
-              key="2"
-              packageName="Tailwind CSS"
-              logoSrc={tailwindLogo}
-              logoClassName={packageStyles.tailwind}
-              logoAltText="tailwind CSS logo"
-              href="https://tailwindcss.com/"
+              packageName="CSS"
+              logoSrc={cssLogo}
+              logoClassName={packageStyles.css}
+              logoAltText="CSS logo"
+              href="https://www.w3schools.com/css/"
             />,
           ]}
         />
 
         <ShowcaseItem
-          websiteName="Evernote (temp)"
-          websiteUrl="https://www.evernote.com"
-          siteImgAltText="evernote website"
-          siteImgSrc={evernoteSiteImg}
+          websiteName="Simple Notes"
+          websiteUrl="https://simplenotes-rc.netlify.app/"
+          siteImgAltText="simple notes website"
+          siteImgSrc={simpleNotesSiteImg}
           packages={[
             <PackageLink
               key="0"
@@ -141,22 +110,22 @@ const ShowcaseSection: React.FC = () => {
             />,
             <PackageLink
               key="1"
-              packageName="JavaScript"
-              logoSrc={jsLogo}
-              logoClassName={packageStyles.js}
-              logoAltText="javascript logo"
-              href="https://www.javascript.com/"
+              packageName="Redux"
+              logoSrc={reduxLogo}
+              logoClassName={packageStyles.redux}
+              logoAltText="redux logo"
+              href="https://redux.js.org/"
             />,
             <PackageLink
               key="2"
-              packageName="CSS"
-              logoSrc={cssLogo}
+              packageName="Tailwind CSS"
+              logoSrc={tailwindLogo}
               logoClassName={packageStyles.css}
-              logoAltText="CSS logo"
-              href="https://www.w3.org/Style/CSS/Overview.en.html"
+              logoAltText="tailwind css logo"
+              href="https://tailwindcss.com/"
             />,
           ]}
-        /> */}
+        />
       </div>
     </section>
   );
