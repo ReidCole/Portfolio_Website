@@ -13,7 +13,6 @@ const StorySection: React.FC = () => {
     const startDate = dayjs(1627833600000);
     const months = dayjs().diff(startDate, "months");
     const days = dayjs().diff(startDate.add(months, "months"), "days");
-    console.log(months, days);
     setTimeTaught(`${months} months and ${days} days`);
   }, []);
 
