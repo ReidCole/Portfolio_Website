@@ -22,8 +22,12 @@
   right: 0;
   bottom: 0;
   background-color: black;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+input:focus-visible + .slider {
+  outline: 0.2rem solid var(--clr-primary);
+  outline-offset: 0.2rem;
 }
 
 .slider:before {

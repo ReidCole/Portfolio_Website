@@ -15,6 +15,15 @@ export const ThemeProvider: React.FC<Props> = ({ children }) => {
   const [darkMode, setDarkMode] = useState<boolean>(true);
 
   useEffect(() => {
+    let theme = localStorage.getItem("theme");
+    if (theme === null) {
+      theme = "dark";
+    }
+    const initial = theme === "dark";
+    setDarkMode(initial);
+  }, []);
+
+  useEffect(() => {
     const html = document.getElementsByTagName("html")[0];
     const scrollbarTracks = document.querySelectorAll("*::-webkit-scrollbar-track");
     const scrollbarThumbs = document.querySelectorAll("*::-webkit-scrollbar-thumb");
@@ -31,6 +40,8 @@ export const ThemeProvider: React.FC<Props> = ({ children }) => {
 
   function setDarkModeValue(value: boolean) {
     setDarkMode(value);
+    const theme = value ? "dark" : "light";
+    localStorage.setItem("theme", theme);
   }
 
   const value: Value = {
