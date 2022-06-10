@@ -46,10 +46,6 @@
   background-color: white;
 }
 
-input:focus + .slider:before {
-  background-color: var(--clr-primary);
-}
-
 input:hover + .slider:before {
   background-color: var(--clr-primary);
 }

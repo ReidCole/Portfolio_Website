@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeContext, useTheme } from "../context/ThemeContext";
 import styles from "../styles/Header.module.css";
 import { ArrowLeftIcon, MoonIcon, SunIcon } from "@heroicons/react/solid";
-import ToggleSwitch from "./ToggleSwtich";
+import ToggleSwitch from "./ToggleSwitch";
 import Link from "next/link";
 import Image from "next/image";
 import meImg from "../public/me.jpg";
