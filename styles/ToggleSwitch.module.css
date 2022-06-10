@@ -49,10 +49,10 @@ input:focus-visible + .slider {
 .dark.slider {
   background-color: white;
 }
-
+/* 
 input:hover + .slider:before {
   background-color: var(--clr-primary);
-}
+} */
 
 input:checked + .slider:before {
   -webkit-transform: translateX(1.4rem);
@@ -67,4 +67,10 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media (hover: hover) {
+  input:hover + .slider:before {
+    background-color: var(--clr-primary);
+  }
 }
