@@ -11,7 +11,7 @@ const ToggleSwitch: React.FC<Props> = ({ checked, onChecked }) => {
   const theme = useTheme();
 
   return (
-    <label className={styles.switch}>
+    <label className={styles.switch} aria-label="Dark Mode Toggle">
       <input type="checkbox" checked={checked} onChange={(e) => onChecked(e.target.checked)} />
       <span className={`${theme(styles.slider, styles.dark)} ${styles.round}`}></span>
     </label>
