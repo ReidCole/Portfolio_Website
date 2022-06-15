@@ -39,7 +39,7 @@ const StorySection: React.FC = () => {
         <p className={styles.mb}>
           I am a fully self-taught web developer, mainly focusing on React JS and the front-end
           development of websites, although I also have some experience with back-end server
-          development.{" "}
+          development using Express JS.{" "}
           {timeTaught.length > 0
             ? `I have been teaching myself for ${timeTaught} (updates on page load).`
             : ""}
@@ -58,6 +58,7 @@ const StorySection: React.FC = () => {
         <ul>
           <li>Express JS</li>
           <li>MongoDB</li>
+          <li>Redux</li>
           <li>Google Firebase</li>
           <li>Amazon Web Services</li>
         </ul>
