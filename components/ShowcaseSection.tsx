@@ -12,7 +12,7 @@ import expressLogo from "../public/logos/express_logo.png";
 import mongoLogo from "../public/logos/mongodb_logo.svg";
 // import jwtLogo from "../public/logos/jwt_logo.svg";
 import reduxLogo from "../public/logos/redux_logo.svg";
-import cypressLogo from "../public/logos/cypress_logo2.svg";
+import cypressLogo from "../public/logos/cypress_logo.svg";
 
 import ShowcaseItem from "./ShowcaseItem";
 import PackageLink from "./PackageLink";
