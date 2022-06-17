@@ -20,8 +20,6 @@ const About: NextPage = () => {
 
         <StorySection />
 
-        <ContactSection />
-
         <Footer />
       </main>
     </>

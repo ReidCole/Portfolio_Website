@@ -9,23 +9,14 @@
 }
 .anchor:hover > .icon {
   color: var(--clr-primary);
-  transform: scale(110%);
 }
-.anchor:hover > .iconName {
-  color: inherit;
-}
-
 .icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
   border-radius: 0.5rem;
   padding: 0.1rem;
   transform: scale(100%);
   transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-  color: black;
-}
-.icon.dark {
-  color: white;
 }
 
 .iconName {

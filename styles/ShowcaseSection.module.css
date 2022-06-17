@@ -5,7 +5,11 @@
   padding: 2rem 1.8rem 4rem 1.8rem;
   max-width: 1200px;
   margin: 0 auto;
-  border: none;
+  border-bottom: 1px solid;
+  border-color: var(--clr-subtext-dark);
+}
+.section.dark {
+  border-color: var(--clr-subtext-light);
 }
 
 .sectionHeading {

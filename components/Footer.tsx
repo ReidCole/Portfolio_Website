@@ -8,12 +8,29 @@ import nextLogo from "../public/logos/nextjs_logo.svg";
 import cssLogo from "../public/logos/css_logo.svg";
 import heroiconsLogo from "../public/logos/heroicons_logo.svg";
 import antDesignLogo from "../public/logos/antdesign_logo.svg";
+import ContactIcon from "./ContactIcon";
+import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail } from "react-icons/ai";
 
 const Footer: React.FC = () => {
   const theme = useTheme();
 
   return (
     <footer className={theme(footerStyles.footer, footerStyles.dark)}>
+      <div className={footerStyles.contactIconList}>
+        <ContactIcon
+          href="mailto:reid-cole@outlook.com"
+          Icon={AiOutlineMail}
+          name="Email"
+          className={footerStyles.iconMail}
+        />
+        <ContactIcon
+          href="https://www.linkedin.com/in/reid-cole/"
+          Icon={AiOutlineLinkedin}
+          name="LinkedIn"
+        />
+        <ContactIcon href="https://github.com/ReidCole" Icon={AiOutlineGithub} name="GitHub" />
+      </div>
+
       <p className={theme(footerStyles.text, footerStyles.dark)}>
         This site was made with the following technologies.
       </p>

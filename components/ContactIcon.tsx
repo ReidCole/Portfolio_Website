@@ -13,9 +13,8 @@ const ContactIcon: React.FC<Props> = ({ name, href, Icon, className = "" }) => {
   const theme = useTheme();
 
   return (
-    <a href={href} className={styles.anchor} target="_blank" rel="noopener noreferrer">
+    <a href={href} className={styles.anchor} target="_blank" rel="noopener noreferrer" title={name}>
       <Icon className={`${theme(styles.icon, styles.dark)} ${className}`} />
-      <p className={styles.iconName}>{name}</p>
     </a>
   );
 };
