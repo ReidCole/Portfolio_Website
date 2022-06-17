@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useContext } from "react";
-import CommissionsSection from "../components/CommissionsSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import Header from "../components/Header";

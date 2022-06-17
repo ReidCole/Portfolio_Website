@@ -49,18 +49,11 @@ const StorySection: React.FC = () => {
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript & TypeScript</li>
-          <li>Next JS</li>
-          <li>Tailwind CSS</li>
+          <li>React JS</li>
+          <li>Express JS</li>
           <li>Git & GitHub</li>
           <li>Cypress (for testing)</li>
-        </ul>
-        <p>Other things I use sometimes</p>
-        <ul>
-          <li>Express JS</li>
-          <li>MongoDB</li>
-          <li>Redux</li>
-          <li>Google Firebase</li>
-          <li>Amazon Web Services</li>
+          <li>Tailwind CSS</li>
         </ul>
       </div>
     </section>

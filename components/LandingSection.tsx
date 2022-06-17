@@ -1,8 +1,5 @@
-import Image from "next/image";
-import { useContext } from "react";
 import { useTheme } from "../context/ThemeContext";
 import styles from "../styles/LandingSection.module.css";
-import bg1 from "../public/background/1.jpg";
 
 const LandingSection: React.FC = () => {
   const theme = useTheme();
@@ -14,7 +11,7 @@ const LandingSection: React.FC = () => {
 
         <h1 className={styles.mainText}>Web Developer</h1>
 
-        <p className={styles.subText}>I make front-end web applications using React JS.</p>
+        <p className={styles.subText}>I make full-stack web applications using React JS.</p>
       </div>
     </section>
   );

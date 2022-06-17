@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={theme(footerStyles.footer, footerStyles.dark)}>
       <p className={theme(footerStyles.text, footerStyles.dark)}>
-        This site was made with the following products and services.
+        This site was made with the following technologies.
       </p>
       <div className={footerStyles.creditsDiv}>
         <PackageLink
